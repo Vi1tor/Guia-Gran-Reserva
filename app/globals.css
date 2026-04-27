@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: var(--font-inter);
+  --font-cormorant: var(--font-cormorant);
+  --color-brand-primary: #5A5A40;
+  --color-brand-secondary: #d4a373;
+  --color-brand-bg: #f5f5f0;
+  --color-brand-ink: #1a1a1a;
+}
+
+@layer base {
+  :root {
+    --brand-primary: #5A5A40;
+    --brand-secondary: #d4a373;
+    --brand-bg: #f5f5f0;
+    --brand-ink: #1a1a1a;
+    --card-bg: #ffffff;
+    --card-border: #e5e5d1;
+  }
+
+  body {
+    background-color: var(--brand-bg);
+    color: var(--brand-ink);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+}
